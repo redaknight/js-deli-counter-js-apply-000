@@ -10,19 +10,12 @@ function takeANumber( katzDeliLine, newName)
 }
 
 function nowServing( katzDeliLine ) {
-    
-    if (katzDeliLine.length === 0) {
-    return "There is nobody waiting to be served!"
+    var nameCurrentlyOnLine = katzDeliLine[0];
+    nameCurrentlyOnLine.splice(0, 1);
+    if (katzDeliLine.length > 0) {
+    return `Currently serving ${nameCurrentlyOnLine}.`;
   } else {
-    return 
-}
-function nowServing(x) {
-  if (x.length === 0) {
-    return "There is nobody waiting to be served!"
-  } else {
-    var name = x[0];
-    x.splice(0, 1);
-    return "Currently serving " + name + ".";
+    return "There is nobody waiting to be served!";
   }
 }
 
