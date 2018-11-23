@@ -9,4 +9,9 @@ function takeANumber( katzDeliLine, newName)
   
 }
 
-function 
+function nowServing( katzDeliLine ) {
+  
+  return 
+}
+
+
