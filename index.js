@@ -11,9 +11,9 @@ function takeANumber( katzDeliLine, newName)
 
 function nowServing( katzDeliLine ) {
     var nameCurrentlyOnLine = katzDeliLine[0];
-    nameCurrentlyOnLine.splice(0, 1);
     if (katzDeliLine.length > 0) {
     return `Currently serving ${nameCurrentlyOnLine}.`;
+     nameCurrentlyOnLine.splice(0, 1);
   } else {
     return "There is nobody waiting to be served!";
   }
